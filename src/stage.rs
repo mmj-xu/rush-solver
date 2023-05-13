@@ -128,22 +128,28 @@ impl Stage {
         let vehicle = |x, y, size, alignment| Vehicle { position: Point { x, y }, size, alignment};
 
         let vehicles = vec![
-            // red_car
-            vehicle(1, 2, 2, Alignment::Horizontal),
-            // green_car
-            vehicle(0, 0, 2, Alignment::Horizontal),
-            // orange_car
-            vehicle(0, 4, 2, Alignment::Vertical),
-            // blue_car
-            vehicle(4, 4, 2, Alignment::Horizontal),
-            // purple_truck
-            vehicle(0, 1, 3, Alignment::Vertical),
-            // blue_truck
-            vehicle(3, 1, 3, Alignment::Vertical),
-            // yellow_truck
-            vehicle(5, 0, 3, Alignment::Vertical),
-            // green_truck
-            vehicle(2, 5, 3, Alignment::Horizontal),
+            // yellow-35
+            vehicle(0, 2, 2, Alignment::Horizontal),
+            // green-81
+            vehicle(0, 0, 3, Alignment::Horizontal),
+            // red-21
+            vehicle(3, 0, 2, Alignment::Vertical),
+            // gray-44
+            vehicle(4, 0, 3, Alignment::Vertical),
+            // gray-40
+            vehicle(2, 1, 2, Alignment::Vertical),
+            // green-14
+            vehicle(0, 3, 2, Alignment::Vertical),
+            // blue-28.2
+            vehicle(2, 3, 2, Alignment::Horizontal),
+            // yellow-30
+            vehicle(4, 3, 2, Alignment::Horizontal),
+	    // red-29
+            vehicle(1, 4, 2, Alignment::Horizontal),
+            // gray-19
+            vehicle(5, 4, 2, Alignment::Vertical),
+            // blue-70
+            vehicle(0, 5, 3, Alignment::Horizontal),
         ];
 
         Stage { vehicles, width: 6, height: 6 }
